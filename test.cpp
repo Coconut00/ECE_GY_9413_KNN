@@ -206,13 +206,6 @@ int main(void) {
     const int dim      = 500;
     const int k        = 5;
 
-    // Display
-    printf("PARAMETERS\n");
-    printf("- Number reference points : %d\n",   ref_nb);
-    printf("- Number query points     : %d\n",   query_nb);
-    printf("- Dimension of points     : %d\n",   dim);
-    printf("- Number of neighbors     : %d\n\n", k);
-
     // Allocate input points and output k-NN distances / indexes
     float * ref        = (float*) malloc(ref_nb   * dim * sizeof(float));
     float * query      = (float*) malloc(query_nb * dim * sizeof(float));
